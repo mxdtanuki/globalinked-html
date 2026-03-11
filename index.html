@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PUP Office of International Affairs</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="header" id="site-header">
+  <div class="header-container">
+    <a href="index.html" class="logo-section">
+      <img src="assets/logo.png" alt="PUP Logo" class="logo" />
+      <div class="university-info">
+        <h1>Polytechnic University of the Philippines</h1>
+        <p>Office of International Affairs</p>
+      </div>
+    </a>
+    <div class="header-right">
+      <nav class="nav" id="main-nav">
+        <button class="nav-item" onclick="scrollToSection('about-hero-edge')">ABOUT</button>
+        <a href="mou-moa.html" class="nav-item">PARTNERSHIP STATISTICS</a>
+        <a href="templates.html" class="nav-item">MEMORANDUM TEMPLATES</a>
+        <button class="nav-item" onclick="scrollToSection('contact')">CONTACT US</button>
+      </nav>
+      <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ===== TOC BUTTON ===== -->
+<div class="oia-toc-wrapper" id="toc-wrapper">
+  <button type="button" class="oia-toc-button oia-toc-button--white" id="toc-button" aria-expanded="false" aria-label="Open table of contents">
+    <svg class="oia-toc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    <span class="oia-toc-label">Table of Contents</span>
+  </button>
+  <div class="oia-toc-menu" id="toc-menu">
+    <button class="oia-toc-link" onclick="scrollToSection('about-hero-edge')">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+      About Us
+    </button>
+    <button class="oia-toc-link" onclick="scrollToSection('objectives')">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+      Objectives &amp; Functions
+    </button>
+    <button class="oia-toc-link" onclick="scrollToSection('services')">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+      Services
+    </button>
+    <button class="oia-toc-link" onclick="scrollToSection('faq')">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      FAQ
+    </button>
+    <button class="oia-toc-link" onclick="scrollToSection('officials')">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+      Officials &amp; Staff
+    </button>
+    <button class="oia-toc-link" onclick="scrollToSection('contact')">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      Contact
+    </button>
+  </div>
+</div>
+
+<!-- ===== HERO / MAIN BANNER ===== -->
+<section id="main-banner" class="oia-main-banner">
+  <div class="oia-hero-section" id="hero-section">
+    <div class="oia-hero-background">
+      <div class="oia-hero-slide oia-hero-slide--active" style="background-image: url('assets/pup-main-building.jpg')"></div>
+      <div class="oia-hero-slide" style="background-image: url('assets/oia/OIA_P1.jpg')"></div>
+      <div class="oia-hero-slide" style="background-image: url('assets/oia/OIA_P2.jpg')"></div>
+      <div class="oia-hero-slide" style="background-image: url('assets/pup-main-building.jpg')"></div>
+      <div class="oia-hero-slide" style="background-image: url('assets/oia/OIA_P3.jpg')"></div>
+      <div class="oia-hero-slide" style="background-image: url('assets/pup-main-building.jpg')"></div>
+      <div class="oia-hero-slide" style="background-image: url('assets/oia/OIA_P4.jpg')"></div>
+      <div class="oia-hero-slide" style="background-image: url('assets/pup-main-building.jpg')"></div>
+      <div class="oia-hero-overlay"></div>
+    </div>
+    <div class="oia-hero-content">
+      <h1 class="oia-hero-title">
+        <span class="oia-title-accent">Office of International Affairs</span>
+        <span class="oia-title-sub">Polytechnic University of the Philippines</span>
+      </h1>
+      <p class="oia-hero-tagline">
+        <span class="oia-tagline-accent">Connecting Our Campus</span>
+        <span class="oia-tagline-separator">&mdash;</span>
+        <span class="oia-tagline-text">To The World</span>
+      </p>
+      <div class="oia-slide-indicators" id="slide-indicators">
+        <button class="oia-slide-dot oia-slide-dot--active" data-slide="0" aria-label="Go to slide 1"></button>
+        <button class="oia-slide-dot" data-slide="1" aria-label="Go to slide 2"></button>
+        <button class="oia-slide-dot" data-slide="2" aria-label="Go to slide 3"></button>
+        <button class="oia-slide-dot" data-slide="3" aria-label="Go to slide 4"></button>
+        <button class="oia-slide-dot" data-slide="4" aria-label="Go to slide 5"></button>
+        <button class="oia-slide-dot" data-slide="5" aria-label="Go to slide 6"></button>
+        <button class="oia-slide-dot" data-slide="6" aria-label="Go to slide 7"></button>
+        <button class="oia-slide-dot" data-slide="7" aria-label="Go to slide 8"></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll marker for About Us -->
+  <div id="about-hero-edge" style="height:0"></div>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <div id="about" class="oia-about-section">
+    <div class="oia-section-container">
+      <div class="oia-about-grid">
+        <div class="oia-about-content">
+          <h2 class="oia-about-title">About the Office</h2>
+          <div class="oia-title-underline oia-title-underline--left"></div>
+          <p class="oia-about-text">
+            The PUP Office of International Affairs is engaged in a wide variety of programs and activities aligned with the vision of President Manuel M. Muhi towards establishment of PUP as a National Polytechnic University.
+          </p>
+          <p class="oia-about-text">
+            The Office for International Affairs provides leadership and coordination for all University-wide international activities for coherence and integration of the institution's international linkages, cooperation, exchanges, programs and services.
+          </p>
+        </div>
+        <div class="oia-recognition-card">
+          <div class="oia-recognition-content">
+            <div class="oia-polytechnic-text">
+              <span class="oia-poly-line">The Country's</span>
+              <span class="oia-poly-line">1st PolytechnicU</span>
+            </div>
+            <div class="oia-wuri-badge">
+              <a href="assets/577342267_1281755067312027_5041505358784559960_n.jpg" target="_blank" rel="noopener noreferrer">
+                <img src="assets/577342267_1281755067312027_5041505358784559960_n.jpg" alt="WURI Logo" class="oia-wuri-logo" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== GLOBAL REACH & SERVICES ===== -->
+  <div class="oia-global-section">
+    <div class="oia-section-container">
+      <div class="oia-global-content">
+        <!-- Left: Our Global Reach -->
+        <div class="oia-global-left">
+          <div class="oia-global-header">
+            <h2 class="oia-section-title">Our Global Reach</h2>
+            <div class="oia-title-underline oia-title-underline--left"></div>
+          </div>
+          <div class="oia-flag-display">
+            <div class="oia-flag-carousel-container">
+              <button class="oia-carousel-arrow oia-carousel-arrow--left" id="flag-prev" aria-label="Previous countries">&#10094;</button>
+              <div class="oia-flag-carousel-wrapper" id="flag-carousel">
+                <!-- Flags will be populated by JS -->
+                <div class="oia-flag-item oia-flag-item--active" data-index="0">
+                  <div class="oia-flag-card">
+                    <img src="https://flagcdn.com/ph.svg" alt="Philippines flag" class="oia-flag-img" />
+                  </div>
+                  <span class="oia-flag-name">Philippines</span>
+                </div>
+              </div>
+              <button class="oia-carousel-arrow oia-carousel-arrow--right" id="flag-next" aria-label="Next countries">&#10095;</button>
+            </div>
+            <div class="oia-flag-counter">
+              <span class="oia-counter-current" id="flag-counter-current">1</span>
+              <span class="oia-counter-separator">/</span>
+              <span class="oia-counter-total" id="flag-counter-total">1</span>
+            </div>
+          </div>
+          <div class="oia-stats-row">
+            <a href="mou-moa.html" class="oia-stat-box" style="cursor:pointer; text-decoration:none;">
+              <span class="oia-stat-number" id="stat-countries">-</span>
+              <span class="oia-stat-label">Partner Countries</span>
+            </a>
+            <a href="mou-moa.html" class="oia-stat-box" style="cursor:pointer; text-decoration:none;">
+              <span class="oia-stat-number" id="stat-institutions">-</span>
+              <span class="oia-stat-label">Institutions</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Our Services -->
+        <div class="oia-global-right">
+          <div class="oia-services-header">
+            <h2 class="oia-section-title">Our Services</h2>
+            <div class="oia-title-underline oia-title-underline--left"></div>
+          </div>
+          <div class="oia-services-list">
+            <div class="oia-service-item">
+              <span class="oia-service-icon">
+                <svg class="icon-svg" viewBox="0 0 640 512"><path fill="currentColor" d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9V320c0 28.4-10.8 57.7-22.3 80.8c-6.5 13-13.9 25.8-22.5 37.6C0 442.7-.9 448.3.9 453.4s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7.3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7C90.3 344.3 86 329.8 80 320v-28.1c0-19.6 4.5-38.2 12.6-54.7l3.7-1.3 215.7 77.9c7.5 2.7 15.7 4.1 24 4.1s16.5-1.4 24-4.1L624.2 182.6c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72l-15.3-145.4L343.7 317.8c-7.5 2.7-15.7 4.1-24 4.1s-16.5-1.4-24-4.1L142.3 262.6 128 408z"/></svg>
+              </span>
+              <span class="oia-service-title">International Exchange Students</span>
+            </div>
+            <div class="oia-service-item">
+              <span class="oia-service-icon">
+                <svg class="icon-svg" viewBox="0 0 496 512"><path fill="currentColor" d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm193.2 152h-82.5c-9-44.4-24.1-82.2-43.2-109.1 50 18 90.6 57.5 125.7 109.1zM248 56c22.3 30.3 39.7 71.5 49.6 104H198.4c9.9-32.5 27.3-73.7 49.6-104zM48.2 248c-1.4-8-2.2-16.3-2.2-24 0-7.7.8-16 2.2-24h96.1c-1.5 15.7-2.3 31.8-2.3 48s.8 32.3 2.3 48H48.2zm7.6 56h82.5c9 44.4 24.1 82.2 43.2 109.1-50-18-90.6-57.5-125.7-109.1zM198.4 408c-9.9-32.5-27.3-73.7-49.6-104h99.2c-9.9 30.5-27.3 71.5-49.6 104zm52.8 1.1c19.1-26.9 34.2-64.7 43.2-109.1h82.5c-35.1 51.6-75.7 91.1-125.7 109.1zM351.7 248c1.5-15.7 2.3-31.8 2.3-48s-.8-32.3-2.3-48h96.1c1.4 8 2.2 16.3 2.2 24 0 7.7-.8 16-2.2 24H351.7z"/></svg>
+              </span>
+              <span class="oia-service-title">International Seminars/Fora</span>
+            </div>
+            <div class="oia-service-item">
+              <span class="oia-service-icon">
+                <svg class="icon-svg" viewBox="0 0 448 512"><path fill="currentColor" d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zM208 80c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v48h48c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H272v48c0 8.8-7.2 16-16 16H224c-8.8 0-16-7.2-16-16V192H160c-8.8 0-16-7.2-16-16V144c0-8.8 7.2-16 16-16h48V80z"/></svg>
+              </span>
+              <span class="oia-service-title">International Scholarship Grants</span>
+            </div>
+            <div class="oia-service-item">
+              <span class="oia-service-icon">
+                <svg class="icon-svg" viewBox="0 0 640 512"><path fill="currentColor" d="M192 96a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm-8 384V352h16V480c0 17.7 14.3 32 32 32s32-14.3 32-32V192h56 64 16c17.7 0 32-14.3 32-32s-14.3-32-32-32H384V64c0-17.7-14.3-32-32-32s-32 14.3-32 32v64H256V64c0-17.7-14.3-32-32-32s-32 14.3-32 32v64H136c-13.3 0-24 10.7-24 24s10.7 24 24 24h8v32H120c-13.3 0-24 10.7-24 24v48H72c-13.3 0-24 10.7-24 24v64c0 17.7 14.3 32 32 32h48v96c0 17.7 14.3 32 32 32s32-14.3 32-32z"/></svg>
+              </span>
+              <span class="oia-service-title">International Faculty Exchange</span>
+            </div>
+            <div class="oia-service-item">
+              <span class="oia-service-icon">
+                <svg class="icon-svg" viewBox="0 0 640 512"><path fill="currentColor" d="M272.2 64.6l-51.1 51.1c-15.3 4.2-29.5 11.9-41.5 22.5L153 161.9C142.8 171 129.5 176 115.8 176H96V304c20.4 .6 39.8 8.9 54.3 23.4l35.6 35.6 7 7c0 0 0 0 0 0L219.9 397c6.2 6.2 16.4 6.2 22.6 0c1.7-1.7 3-3.7 3.7-5.8c2.8-7.7 9.3-13.5 17.3-15.3s16.4 .6 22.2 6.5L296.5 393c11.6 11.6 30.4 11.6 42 0c5.4-5.4 8.3-12.3 8.6-19.4c.4-8.8 5.2-16.6 13.1-20.8s17.2-3.9 24.7 1.2l11.1 7.6c8.8 6 20.8 4.9 28.4-2.7l7.9-7.9c6.1-6.1 6.1-16 0-22.1l-23.6-23.6c-6.6-6.6-10.3-15.5-10.3-24.8c0-9.3 3.7-18.2 10.3-24.8l21.7-21.7c3.3 3.6 7.1 6.9 11.2 9.6l0 0c12.1 7.8 27.5 7.5 39.3-.5L564.8 176H528V166.5c0-14.7-5.8-28.9-16.1-39.3L486.3 101.5c-9.5-9.5-22.2-14.9-35.6-14.9H432.5c-8 0-15.7 2.5-22.2 7.2l-36.8 26.3c-6.5 4.6-14.2 7.2-22.2 7.2H315.9C295.1 127.3 276.2 99 272.2 64.6zM42.3 377.7c-4.3-4.3-6.7-10.2-6.7-16.3s2.4-12 6.7-16.3l25.1-25.1c4.3-4.3 10.2-6.7 16.3-6.7s12 2.4 16.3 6.7l9.2 9.2 42 42 9.2 9.2c4.3 4.3 6.7 10.2 6.7 16.3s-2.4 12-6.7 16.3l-25.1 25.1c-4.3 4.3-10.2 6.7-16.3 6.7s-12-2.4-16.3-6.7L42.3 377.7z"/></svg>
+              </span>
+              <span class="oia-service-title">International Organizations Affiliation</span>
+            </div>
+            <div class="oia-service-item">
+              <span class="oia-service-icon">
+                <svg class="icon-svg" viewBox="0 0 640 512"><path fill="currentColor" d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206 eli250.5 212.5 329.3 262.4 379.2c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372.1 74 321.1 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.8l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 261.5 427 182.7 377.1 132.8c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z"/></svg>
+              </span>
+              <span class="oia-service-title">International Linkages</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== PARTNER INSTITUTIONS ===== -->
+  <div class="oia-partners-section">
+    <div class="oia-section-container">
+      <div class="oia-partners-header">
+        <h2 class="oia-section-title">Partner Institutions</h2>
+        <div class="oia-title-underline"></div>
+      </div>
+      <div class="oia-partners-carousel-container" id="partners-carousel-container">
+        <button class="oia-carousel-arrow oia-carousel-arrow--left" id="partner-prev" aria-label="Previous institutions">&#10094;</button>
+        <div class="oia-partners-carousel-wrapper">
+          <div class="oia-partners-carousel" id="partners-carousel">
+            <!-- Partner cards will be populated by JS -->
+          </div>
+        </div>
+        <button class="oia-carousel-arrow oia-carousel-arrow--right" id="partner-next" aria-label="Next institutions">&#10095;</button>
+      </div>
+      <div class="oia-partners-loading" id="partners-loading">
+        <div class="oia-loading-spinner"></div>
+        <p>Loading partner institutions...</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== OBJECTIVES & FUNCTIONS ===== -->
+<section class="pup-io-objectives-functions" id="objectives">
+  <div class="pup-io-container">
+    <div class="pup-io-content-grid">
+      <!-- Objectives -->
+      <div class="pup-io-objectives-section">
+        <div class="pup-io-section-header">
+          <svg class="pup-io-section-icon" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="6" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="2"/></svg>
+          <h3 class="pup-io-section-title">Objectives</h3>
+        </div>
+        <div class="pup-io-cards-container">
+          <div class="pup-io-objective-card">
+            <img src="assets/gradcap.png" alt="Icon" class="pup-io-card-icon-img" />
+            <p class="pup-io-card-text">Promote PUP as a premier institution of higher learning in the Asia-Pacific Region.</p>
+          </div>
+          <div class="pup-io-objective-card">
+            <img src="assets/collaboration.png" alt="Icon" class="pup-io-card-icon-img" />
+            <p class="pup-io-card-text">Underscore productive collaboration with international institutions, linkages and affiliations.</p>
+          </div>
+          <div class="pup-io-objective-card">
+            <img src="assets/trophy.png" alt="Icon" class="pup-io-card-icon-img" />
+            <p class="pup-io-card-text">Prepare stakeholder to meet the challenges of global competition.</p>
+          </div>
+          <div class="pup-io-objective-card">
+            <img src="assets/learning.png" alt="Icon" class="pup-io-card-icon-img" />
+            <p class="pup-io-card-text">Offer wider opportunities for educational, cultural and scientific exchange.</p>
+          </div>
+          <div class="pup-io-objective-card">
+            <img src="assets/global-map.png" alt="Icon" class="pup-io-card-icon-img" />
+            <p class="pup-io-card-text">Increase PUP's international exposure and participation.</p>
+          </div>
+          <div class="pup-io-objective-card">
+            <img src="assets/passport.png" alt="Icon" class="pup-io-card-icon-img" />
+            <p class="pup-io-card-text">Attract a greater number of international visitors.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Functions -->
+      <div class="pup-io-functions-section">
+        <div class="pup-io-section-header">
+          <svg class="pup-io-section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+          <h3 class="pup-io-section-title">Functions</h3>
+        </div>
+        <div class="pup-io-cards-container">
+          <div class="pup-io-function-card">
+            <img src="assets/feedback.png" alt="Icon" class="pup-io-card-icon-img" />
+            <p class="pup-io-card-text">Explore, establish and administer the forging of linkages with overseas universities.</p>
+          </div>
+          <div class="pup-io-function-card">
+            <img src="assets/agreement.png" alt="Icon" class="pup-io-card-icon-img" />
+            <p class="pup-io-card-text">Ensure the smooth and efficient implementation and execution of PUP's responsibilities specified in agreements/understandings entered into with international institutions/agencies.</p>
+          </div>
+          <div class="pup-io-function-card">
+            <img src="assets/Info-icon.png" alt="Icon" class="pup-io-card-icon-img" />
+            <p class="pup-io-card-text">Provide information and assist grantees/recipients of academic exchanges, study tours and presentation of papers and researches in international fora/conferences.</p>
+          </div>
+          <div class="pup-io-function-card">
+            <img src="assets/student-travel.png" alt="Icon" class="pup-io-card-icon-img" />
+            <p class="pup-io-card-text">Facilitate, oversee and monitor entry and departure of international students in coordination with the Office of the Vice President for Student Services and other concerned offices inside and outside of PUP.</p>
+          </div>
+          <div class="pup-io-function-card">
+            <img src="assets/tour.png" alt="Icon" class="pup-io-card-icon-img" />
+            <p class="pup-io-card-text">Coordinate and assist international visits to the campus.</p>
+          </div>
+          <div class="pup-io-function-card">
+            <img src="assets/conference.png" alt="Icon" class="pup-io-card-icon-img" />
+            <p class="pup-io-card-text">Assist in holding international conferences.</p>
+          </div>
+          <div class="pup-io-function-card">
+            <img src="assets/feedback.png" alt="Icon" class="pup-io-card-icon-img" />
+            <p class="pup-io-card-text">Provide the PUP president and other executive officials, education agencies and foreign institutions with progress reports, feedback and other pertinent information about international programs, projects and activities of the University.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section id="services" class="services">
+  <div class="container">
+    <h2 class="section-title">Services</h2>
+    <div class="services-grid">
+      <!-- Student Mobility -->
+      <div class="service-card">
+        <div class="service-header">
+          <div class="service-icon">
+            <svg class="service-icon-img icon-svg" viewBox="0 0 512 512"><path fill="currentColor" d="M243.4 2.6l-224 96c-14 6-21.8 21-18.7 35.8S16.8 160 32 160v8c0 13.3 10.7 24 24 24H456c13.3 0 24-10.7 24-24v-8c15.2 0 28.3-10.7 31.3-25.6s-4.7-29.8-18.7-35.8l-224-96c-8-3.4-17.2-3.4-25.2 0zM128 224H64V420.3c-.6.3-1.2.7-1.8 1.1l-48 32c-11.7 7.8-17 22.4-12.9 35.9S17.9 512 32 512H480c14.1 0 26.5-9.2 30.6-22.7s-1.1-28.1-12.9-35.9l-48-32c-.6-.4-1.2-.7-1.8-1.1V224H384V416H344V224H280V416H232V224H168V416H128V224z"/></svg>
+          </div>
+          <h3>Student Mobility</h3>
+        </div>
+        <div class="service-content">
+          <div class="subsection">
+            <h4>International Students in PUP</h4>
+            <ul>
+              <li>Admission - Attends to the recruitment and application of international students</li>
+              <li>Legal Status - Coordinates with the Liaison Officer from OUR and ARO</li>
+              <li>Residency - Monitors stay and residency needs of all international students</li>
+            </ul>
+          </div>
+          <div class="subsection">
+            <h4>Student Exchange Program</h4>
+            <ul>
+              <li>Coordinates and implements academic and cultural exchange activities with partner universities abroad</li>
+            </ul>
+          </div>
+          <div class="subsection">
+            <h4>Students' Travel Abroad</h4>
+            <ul>
+              <li>Attend convention/conference/seminar/training</li>
+              <li>Participate in competition</li>
+              <li>Paper presentation</li>
+              <li>Campus visit</li>
+              <li>Industry visit</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Faculty and Staff Mobility -->
+      <div class="service-card faculty-staff">
+        <div class="service-header">
+          <div class="service-icon">
+            <svg class="service-icon-img icon-svg" viewBox="0 0 640 512"><path fill="currentColor" d="M192 96a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm-8 384V352h16V480c0 17.7 14.3 32 32 32s32-14.3 32-32V192h56 64 16c17.7 0 32-14.3 32-32s-14.3-32-32-32H384V64c0-17.7-14.3-32-32-32s-32 14.3-32 32v64H256V64c0-17.7-14.3-32-32-32s-32 14.3-32 32v64H136c-13.3 0-24 10.7-24 24s10.7 24 24 24h8v32H120c-13.3 0-24 10.7-24 24v48H72c-13.3 0-24 10.7-24 24v64c0 17.7 14.3 32 32 32h48v96c0 17.7 14.3 32 32 32s32-14.3 32-32z"/></svg>
+          </div>
+          <h3>Faculty and Staff Mobility</h3>
+        </div>
+        <div class="service-content">
+          <div class="subsection">
+            <h4>Travel Abroad Purposes</h4>
+            <ul>
+              <li>Paper presentation</li>
+              <li>Benchmarking</li>
+              <li>Research collaborations</li>
+              <li>Speakership/as resource person</li>
+              <li>Serving as panelists/judges</li>
+              <li>Visiting Professor/Lecturers</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Partnership, Linkages, and Networks -->
+      <div class="service-card">
+        <div class="service-header">
+          <div class="service-icon">
+            <svg class="service-icon-img icon-svg" viewBox="0 0 496 512"><path fill="currentColor" d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm193.2 152h-82.5c-9-44.4-24.1-82.2-43.2-109.1 50 18 90.6 57.5 125.7 109.1zM248 56c22.3 30.3 39.7 71.5 49.6 104H198.4c9.9-32.5 27.3-73.7 49.6-104zM48.2 248c-1.4-8-2.2-16.3-2.2-24 0-7.7.8-16 2.2-24h96.1c-1.5 15.7-2.3 31.8-2.3 48s.8 32.3 2.3 48H48.2zm7.6 56h82.5c9 44.4 24.1 82.2 43.2 109.1-50-18-90.6-57.5-125.7-109.1zM198.4 408c-9.9-32.5-27.3-73.7-49.6-104h99.2c-9.9 30.5-27.3 71.5-49.6 104zm52.8 1.1c19.1-26.9 34.2-64.7 43.2-109.1h82.5c-35.1 51.6-75.7 91.1-125.7 109.1zM351.7 248c1.5-15.7 2.3-31.8 2.3-48s-.8-32.3-2.3-48h96.1c1.4 8 2.2 16.3 2.2 24 0 7.7-.8 16-2.2 24H351.7z"/></svg>
+          </div>
+          <h3>Partnership, Linkages, and Networks</h3>
+        </div>
+        <div class="service-content">
+          <div class="subsection">
+            <h4>International Partnerships</h4>
+            <ul>
+              <li>Facilitates signing of Memorandum of Understanding with Institution and/or industry partners abroad</li>
+              <li>Coordinates with colleges implementation of Memorandum of Agreement reached with partner institutions</li>
+              <li>Represents PUP high officials in international events/activities locally/abroad</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section id="faq" class="faq">
+  <div class="container">
+    <h2 class="section-title">Frequently Asked Questions</h2>
+    <h3 class="section-subtitle">International Student FAQ For Non-Filipino/International Students</h3>
+    <div class="faq-container" id="faq-container">
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          <span>Does PUP admit/accept transferee for undergraduate program from another Philippine school or school abroad?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer"><p>YES. A letter of intent addressed to the University President thru the Vice-President for Academic Affairs should be sent/submitted.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          <span>Where can I get information on courses?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer"><p>Polytechnic University of the Philippines has a wide range of courses at various levels - Bachelors, Masters, and Doctorate. For information please browse the programs offered in undergraduate and graduate levels.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          <span>Can an international student take admission exam any time of the year?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer"><p>Yes, provided they take the exam during the admission exam schedule in time for the enrollment schedule for first or second semester or summer.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          <span>How do I apply?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer"><p>For application procedures and other requirements, please click <a href="https://www.pup.edu.ph/international/requirements" target="_blank" rel="noopener noreferrer">here.</a></p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          <span>What are the entry requirements?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer"><p>Applicants should meet PUP's academic, English language and document requirements. Applicants should take the PUP Admission Examination for International Students at the PUP Main Campus.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          <span>How do I get a visa?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer"><p>After meeting all the requirements (academic, language and documentary) PUP Registrar will issue a Notice of Acceptance needed for converting current visa to student visa. The Liaison Officer of PUP will assist student at the Bureau of Immigration.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          <span>How long does it take to get a student visa?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer"><p>Processing of student visa conversion takes at most 2-3 months provided documents are complete and duly authenticated by the Philippine Foreign Service Post in the applicant's country of origin. PUP Liaison officer facilitates student visa processing.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          <span>If I am below 18 years old, am I required to have a student visa?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer"><p>A Special Study Permit (SSP) from the Philippine Bureau of Immigration is required for a student below 18 years old. PUP Liaison Officer will assist in securing the SSP.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== OFFICIALS ===== -->
+<section id="officials" class="officials">
+  <div class="container">
+    <h2 class="section-title">Officials and Staff</h2>
+    <div class="officials-grid">
+      <div class="officials-row top">
+        <div class="official-card">
+          <div class="official-image"><img src="assets/oia/OIA_Felicitas C. Trinidad (1).jpg" alt="Felicitas C. Trinidad" /></div>
+          <div class="official-info">
+            <h3>Felicitas C. Trinidad, MPsy, RPm, CHRA</h3>
+            <p>Director</p>
+          </div>
+        </div>
+        <div class="official-card">
+          <div class="official-image"><img src="assets/Sir Nicky.jpg" alt="Nicky C. Cardenas" /></div>
+          <div class="official-info">
+            <h3>Nicky C. Cardenas, EMJMD</h3>
+            <p>Chief, Partnership and Linkages Section</p>
+          </div>
+        </div>
+        <div class="official-card">
+          <div class="official-image"><img src="assets/oia/OIA_Christoper F. Sasot (1).jpg" alt="Christopher F. Sasot" /></div>
+          <div class="official-info">
+            <h3>Christopher F. Sasot, PhD</h3>
+            <p>Chief, Special Internationalization Projects</p>
+          </div>
+        </div>
+      </div>
+      <div class="officials-row bottom">
+        <div class="official-card">
+          <div class="official-image"><img src="assets/IMG_2031.JPG" alt="Joseph Christopher DT. Briana" /></div>
+          <div class="official-info">
+            <h3>Joseph Christopher DT. Briana</h3>
+            <p>Chief, Study and Exchange Program Section</p>
+          </div>
+        </div>
+        <div class="official-card">
+          <div class="official-image"><img src="assets/oia/OIA_Rochelle S. Murao (2).jpg" alt="Rochelle S. Murao" /></div>
+          <div class="official-info">
+            <h3>Rochelle S. Murao</h3>
+            <p>Administrative Aide VI</p>
+          </div>
+        </div>
+        <div class="official-card">
+          <div class="official-image"><img src="assets/oia/OIA_Cynthia C. Trinidad.jpg" alt="Cynthia C. Trinidad" /></div>
+          <div class="official-info">
+            <h3>Cynthia C. Trinidad</h3>
+            <p>Administrative Aide VI</p>
+          </div>
+        </div>
+        <div class="official-card">
+          <div class="official-image"><img src="assets/oia/OIA_Marianne P. Enguerra (2).jpg" alt="Marianne P. Enguerra" /></div>
+          <div class="official-info">
+            <h3>Marianne P. Enguerra</h3>
+            <p>Emergency Administrative Aide III</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="contact-section" id="contact">
+  <div class="contact-container">
+    <div class="contact-info-centered">
+      <h2>Contact Information</h2>
+      <div class="contact-items-row">
+        <div class="contact-item">
+          <svg class="contact-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <div>
+            <h3>Email</h3>
+            <p>internationalaffairs@pup.edu.ph</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <svg class="contact-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <div>
+            <h3>Postal Mail</h3>
+            <p>
+              <strong>Office of International Affairs</strong><br />
+              3/F South Wing, Main Building<br />
+              A. Mabini Campus, Anonas St., Sta. Mesa<br />
+              Manila, Philippines 01016
+            </p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <svg class="contact-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <div>
+            <h3>Telephone</h3>
+            <p>(+63 2) 335-1PUP (335-1787) or<br />335-1777 local 622</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <div class="footer-logo-section">
+          <img src="assets/logo.png" alt="PUP Logo" class="footer-logo" />
+          <div class="footer-university-info">
+            <h3 class="footer-university-name">
+              <a href="https://www.pup.edu.ph/" target="_blank" rel="noopener noreferrer" style="text-decoration:none; color:inherit;">
+                Polytechnic University<br />of the Philippines<br />
+              </a>
+            </h3>
+            <p class="footer-office-name">Office of International Affairs</p>
+          </div>
+        </div>
+        <p class="footer-description">
+          Fostering global partnerships and<br />
+          international collaboration to enhance<br />
+          educational excellence and cultural<br />
+          exchange.
+        </p>
+      </div>
+      <div class="footer-section">
+        <h4 class="footer-section-title">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#objectives" class="footer-link">Objective and Functions</a></li>
+          <li><a href="#services" class="footer-link">Services</a></li>
+          <li><a href="#faq" class="footer-link">Frequently Asked Questions</a></li>
+          <li><a href="#officials" class="footer-link">Officials and Staff</a></li>
+          <li><a href="#contact" class="footer-link">Contact Information</a></li>
+          <li><a href="mou-moa.html" class="footer-link">International Linkages</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4 class="footer-section-title">Our Services</h4>
+        <ul class="footer-services-text">
+          <li>Student Exchange Programs</li>
+          <li>International Partnerships</li>
+          <li>Study Abroad Assistance</li>
+          <li>Cultural Exchange</li>
+          <li>Research Collaboration</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4 class="footer-section-title">Faculty</h4>
+        <ul class="footer-links">
+          <li><a href="faculty-login.html" class="footer-link">Globalinked</a></li>
+        </ul>
+        <h4 class="footer-section-title" style="margin-top:2rem">Follow Us</h4>
+        <div class="footer-social-clean">
+          <a href="https://www.facebook.com/PUPOFIA" target="_blank" rel="noopener noreferrer" class="footer-social-link-clean">
+            <img src="assets/facebook.png" alt="Facebook" class="social-icon-clean" />
+            <span class="social-text">PUP OIA Page</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-floating-elements">
+    <div class="floating-element floating-1"></div>
+    <div class="floating-element floating-2"></div>
+    <div class="floating-element floating-3"></div>
+    <div class="floating-element floating-4"></div>
+    <div class="floating-element floating-5"></div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
